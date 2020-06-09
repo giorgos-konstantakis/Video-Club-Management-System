@@ -38,7 +38,7 @@ public class CustomerFrame extends JFrame{
 		 
 		 try {
 				Class.forName("com.mysql.jdbc.Driver"); 
-				Connection allCustomers = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+				Connection allCustomers = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 				Statement customerStmt = allCustomers.createStatement();
 				String sql="SELECT fname AS First_Name,lname AS Last_Name,dob AS Date_Of_Birth,"
 						+ "home_adress AS Home_Adress,passw AS Password,username AS Username,mail AS Mail,phone AS Contact_Phone FROM customers";

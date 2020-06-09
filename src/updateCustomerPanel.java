@@ -296,7 +296,7 @@ public class updateCustomerPanel extends JFrame {
 					
 					try {
 						Class.forName("com.mysql.jdbc.Driver"); 
-						Connection addCustomerConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+						Connection addCustomerConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 						Statement addCustomerStmt = addCustomerConn.createStatement();
 						String sql = "UPDATE customers SET fname='"+first_name+"',lname='"+last_name+"',dob='"+DOB+"',home_adress='"+home_address+"',"
 									+"username='"+surName+"',passw='"+passwo+"',mail='"+Mail+"',phone='"+Phone+"'"

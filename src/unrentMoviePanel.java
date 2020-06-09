@@ -68,7 +68,7 @@ public class unrentMoviePanel extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					Connection unrentMovieConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+					Connection unrentMovieConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 					Statement unrentMovieStmt = unrentMovieConn.createStatement();
 					String sql = "UPDATE movies SET movies.rent_until='free',movies.customer_id=DEFAULT WHERE movies.title='"+movie_title+"'";
 					

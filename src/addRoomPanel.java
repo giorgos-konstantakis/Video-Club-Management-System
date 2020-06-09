@@ -67,7 +67,7 @@ public class addRoomPanel extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					Connection addRoomConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+					Connection addRoomConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 					Statement addRoomStmt = addRoomConn.createStatement();
 					String sql = "insert into cinema_room(capacity)"
 								+" values('"+room_capacity+"');";

@@ -217,7 +217,7 @@ public class addCustomerPanel extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					Connection addCustomerConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+					Connection addCustomerConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 					Statement addCustomerStmt = addCustomerConn.createStatement();
 					String sql = "insert into customers(fname,lname,dob,home_adress,username,passw,mail,phone)"
 								+" values('"+first_name+"','"+last_name+"','"+DOB+"','"+home_address+"','"+surName+"','"+passwo+"','"+Mail+"','"+Phone+"');";

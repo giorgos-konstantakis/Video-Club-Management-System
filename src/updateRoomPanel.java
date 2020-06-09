@@ -109,7 +109,7 @@ public class updateRoomPanel extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					Connection addRoomConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+					Connection addRoomConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 					Statement addRoomStmt = addRoomConn.createStatement();
 					String sql = "UPDATE cinema_room SET cinema_room.capacity='"+room_capacity+"' "
 								+" WHERE room_id='"+room_number+"'";

@@ -67,7 +67,7 @@ public class delMoviePanel extends JFrame {
 					
 					try {
 						Class.forName("com.mysql.jdbc.Driver"); 
-						Connection delMovieConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+						Connection delMovieConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 						Statement delMovieStmt = delMovieConn.createStatement();
 						String sql = "delete from movies where title='"+movie_title+"'";
 						

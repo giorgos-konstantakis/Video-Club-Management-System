@@ -171,7 +171,7 @@ public class rentMoviePanel extends JFrame {
 					
 					try {
 						Class.forName("com.mysql.jdbc.Driver"); 
-						Connection rentMovieConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+						Connection rentMovieConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 						Statement rentMovieStmt = rentMovieConn.createStatement();
 						String sql = "UPDATE movies SET movies.customer_id=(SELECT customer_id FROM customers WHERE"
 									+ " customers.fname='"+customer_first+"' AND customers.lname='"+customer_last+"'"

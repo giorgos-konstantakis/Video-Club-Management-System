@@ -68,7 +68,7 @@ public class delRoomPanel extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					Connection delRoomConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+					Connection delRoomConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 					String sql = "delete from cinema_room where room_id=?";
 					PreparedStatement delRoomStmt = delRoomConn.prepareStatement(sql);
 					delRoomStmt.setInt(1,rn);

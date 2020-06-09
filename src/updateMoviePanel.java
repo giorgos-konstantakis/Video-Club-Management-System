@@ -192,7 +192,7 @@ public class updateMoviePanel extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					Connection addMovieConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+					Connection addMovieConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 					Statement addMovieStmt = addMovieConn.createStatement();
 					String sql = "UPDATE movies SET title='"+movie_title+"',genre='"+movie_genre+"',rating='"+movie_rating+"',imdb_rating='"+imdb_rating+"',"
 								+"dor='"+DOR+"' WHERE title='"+movie_title_select+"'";

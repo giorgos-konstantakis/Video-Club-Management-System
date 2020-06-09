@@ -152,7 +152,7 @@ public class addMoviePanel extends JFrame {
 					
 					try {
 						Class.forName("com.mysql.jdbc.Driver"); 
-						Connection addMovieConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+						Connection addMovieConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 						Statement addMovieStmt = addMovieConn.createStatement();
 						String sql = "insert into movies(title,genre,rating,imdb_rating,dor)"
 									+" values('"+movie_title+"','"+movie_genre+"','"+movie_rating+"','"+imdb_rating+"','"+movie_dor+"');";

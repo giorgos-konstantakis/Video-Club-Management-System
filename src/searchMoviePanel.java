@@ -76,7 +76,7 @@ public class searchMoviePanel extends JFrame {
 						    String movie_title = movieTitleText.getText();
 						 
 							Class.forName("com.mysql.jdbc.Driver"); 
-							Connection searchMovies = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+							Connection searchMovies = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 							String sql="SELECT movies.title AS Title,movies.genre AS Genre,movies.rating AS Rating,"
 									+ "movies.imdb_rating AS IMDB_Rating,movies.dor AS Date_Of_Release,"
 									+ "movies.rent_until AS Rent_Until,customers.fname AS First_Name,"

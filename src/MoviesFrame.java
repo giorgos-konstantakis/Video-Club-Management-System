@@ -32,7 +32,7 @@ public class MoviesFrame extends JFrame {
 		 
 		 try {
 				Class.forName("com.mysql.jdbc.Driver"); 
-				Connection allMovies = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+				Connection allMovies = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 				Statement movieStmt = allMovies.createStatement();
 				String sql="SELECT movies.title AS Title,movies.genre AS Genre,movies.rating AS Rating,movies.imdb_rating AS IMDB_Rating,"
 							+ "movies.dor AS Date_Of_Release,movies.rent_until AS Rent_Until,customers.fname AS First_Name,customers.lname AS Last_Name"

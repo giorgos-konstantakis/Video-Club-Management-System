@@ -108,7 +108,7 @@ public class delCustomerPanel extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					Connection delCustomerConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+					Connection delCustomerConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 					Statement delCustomerStmt = delCustomerConn.createStatement();
 					String sql = "delete from customers where fname='"+first_name+"' and lname='"+last_name+"' and passw='"+passwo+"'";
 					

@@ -77,7 +77,7 @@ public class searchRoomPanel extends JFrame {
 					    int capac = Integer.parseInt(room_capacity);
 					 
 						Class.forName("com.mysql.jdbc.Driver"); 
-						Connection searchRooms = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+						Connection searchRooms = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 						String sql="SELECT cinema_room.room_id AS Room_Number,cinema_room.capacity AS Capacity,cinema_room.rent_for AS Rented_for,"
 									+"customers.fname AS First_Name,customers.lname AS Last_Name FROM "
 									+"cinema_room LEFT JOIN customers ON cinema_room.customer_id = customers.customer_id "

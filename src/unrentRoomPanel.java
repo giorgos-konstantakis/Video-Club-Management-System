@@ -67,7 +67,7 @@ public class unrentRoomPanel extends JFrame {
 				
 				try {
 					Class.forName("com.mysql.jdbc.Driver"); 
-					Connection unrentRoomConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+					Connection unrentRoomConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 					Statement unrentRoomStmt = unrentRoomConn.createStatement();
 					String sql = "UPDATE cinema_room SET rent_for='free',customer_id=DEFAULT WHERE room_id='"+room_number+"'";
 					

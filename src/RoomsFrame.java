@@ -32,7 +32,7 @@ public class RoomsFrame extends JFrame {
 		 
 		 try {
 				Class.forName("com.mysql.jdbc.Driver"); 
-				Connection allCustomers = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","giorgos7fak13lovbuziaa");
+				Connection allCustomers = DriverManager.getConnection("jdbc:mysql://localhost:3306/pro_java","root","password");
 				Statement customerStmt = allCustomers.createStatement();
 				String sql="SELECT room_id AS Room_Number,capacity AS Capacity,"
 						+ "rent_for AS Rented_For,customers.fname AS First_Name,customers.lname AS Last_Name"
